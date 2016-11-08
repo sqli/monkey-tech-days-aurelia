@@ -1,0 +1,17 @@
+<template>
+
+  <h2>Qui est cet animal ?</h2>
+
+  <div class="col-xs-12">
+
+    <img class="col-xs-12 col-sm-6" src="${question.image.url}" alt="${question.image.copyright}">
+
+    <div class="list-group col-xs-12 col-sm-6">
+      <button type="button" class="list-group-item" repeat.for="response of question.responses" click.delegate="next(response)">
+        ${response}
+      </button>
+    </div>
+
+  </div>
+
+</template>

@@ -1,0 +1,15 @@
+<template>
+
+  <form class="form-signin col-xs-12 col-sm-6" role="form" submit.delegate="signup()">
+
+    <h2 class="form-signin-heading">Please sign in!</h2>
+
+    <label for="login" class="sr-only">Login</label>
+    <input id="login" value.bind="login" placeholder="Enter your login here..." class="form-control" placeholder="Email address" required autofocus/>
+
+    <hr/>
+
+    <button class="btn btn-lg btn-default btn-block" type="submit">Start the quizz</button>
+  </form>
+
+</template>
